@@ -2,26 +2,25 @@ header {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 30px;
-    padding-top: 0px;
+    padding: 0px 30px 30px;
 }
 
-header>h1 {
+header > h1 {
     font-size: 60px;
     margin-bottom: 0;
     text-shadow: 2px 2px 4px gray;
 }
 
-header>h2 {
+header > h2 {
     font-size: 30px;
     margin-top: 0;
     margin-bottom: 0;
     text-shadow: 2px 2px 4px gray;
 }
 
-header>h3 {
+header > h3 {
     font-size: 3px;
-    margin-top: 3;
+    margin-top: 3px;
     font-style: italic;
     text-shadow: 2px 2px 4px gray;
 }
@@ -29,5 +28,9 @@ header>h3 {
 html {
     background-color: white;
     color: black;
-    font-size: 25;
+    font-size: 25px;
+}
+
+#graphImage {
+    margin: 20px;
 }

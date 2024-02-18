@@ -16,6 +16,7 @@
 
 <form id="form">
     <label>Введите целое число x:</label><br>
+    <%--    TODO уброать этот говнокод и добавить механику через .value--%>
     <input type="checkbox" id="x" name="x" value="-3">
     <label>-3</label><br>
     <input type="checkbox" id="x" name="x" value="-2">
@@ -39,7 +40,7 @@
     <input type="text" id="y" name="y"><br><br>
 
     <label>Выберите число R:</label><br>
-    <select id="R" name="R">
+    <select id="R" name="R" onchange="redrawGraph(this.value)">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -47,16 +48,23 @@
         <option value="5">5</option>
     </select>
 
-    <input type="hidden" id = "hidden_res" name = "results" value="">
+    <input type="hidden" id="hidden_res" name="results" value="">
 
     <button type="submit" id="submit">Отправить</button>
 </form>
-<img src="areas.png" alt="areas">
-<%--TODO вставить свг график--%>
-<div id = 'container'>
-    <table id="results"><tr><td>X</td><td>Y</td><td>R</td><td>Result</td></tr></table>
-</div>
 
+<canvas id="graphImage"></canvas>
+
+<div id='container'>
+    <table id="results">
+        <tr>
+            <td>X</td>
+            <td>Y</td>
+            <td>R</td>
+            <td>Result</td>
+        </tr>
+    </table>
+</div>
 
 <script src="script.js"></script>
 </body>
