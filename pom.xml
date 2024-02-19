@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.username918r818</groupId>
-    <artifactId>web2297</artifactId>
-    <version>5</version>
-    <name>web297</name>
+    <artifactId>web2</artifactId>
+    <version>1</version>
+    <name>web2</name>
     <packaging>war</packaging>
 
     <properties>
